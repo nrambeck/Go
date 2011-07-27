@@ -1,0 +1,49 @@
+Synopsis
+========
+
+go is a script for creating and executing unix commands using shortcuts
+
+Examples
+========
+
+This command might ssh into a development server
+  go devserver
+  
+Add a new shortcut, you will be prompted for the command
+  go -a devserver
+
+Remove an existing shortcut
+  go -d devserver
+
+List all available shortcuts
+  go -l
+
+Usage
+=====
+
+  go [options] shortcut
+
+  For help use: go -h
+
+Options
+=======
+
+  -h, --help          Displays help message
+  -v, --version       Display the version, then exit
+  -q, --quiet         Output as little as possible, overrides verbose
+  -V, --verbose       Verbose output
+  -a, --add           Add a new shell command
+  -d, --remove        Remove an existing shell command shortcut
+  -l, --list          List all shell command shortcuts
+
+Author
+======
+
+  Nathan Rambeck
+  http://nathan.rambeck.org
+
+Copyright
+=========
+
+  Copyright (c) 2011 Nathan Rambeck. Licensed under the MIT License:
+  http://www.opensource.org/licenses/mit-license.php
